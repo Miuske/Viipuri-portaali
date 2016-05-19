@@ -1,0 +1,716 @@
+/*
+Theme Name: Viipuri-portaali
+Theme URI: siljaka.com/viipuri
+Author: Silja Karesto, Mia Leskinen, Johannes Hartikainen
+*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  height:100%;
+}
+
+.whole-page-wrapper {
+  min-height:100%;
+  position: relative;
+}
+
+.wide-element {
+  padding: 0;
+}
+
+/********** POST IMAGES **********/
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+/********** FONTS **********/
+
+h1 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: 'Hind', sans-serif;
+}
+
+h3, .topic h3 {
+  color: #333;
+  padding-top: 20px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 100;
+}
+
+.topic a:hover {
+  text-decoration: none;
+}
+
+.topic h3:hover {
+  color: #E49729;
+}
+
+.topic a:active {
+  text-decoration: none;
+}
+
+h3, .topic-dark h3 {
+  padding-top: 20px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 100;
+}
+
+.topic-dark a:hover {
+  text-decoration: none;
+}
+
+.topic-dark h3 {
+  color: #fff;
+  padding-top: 20px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 100;
+}
+.topic-dark h3:hover {
+  color: #E49729;
+}
+
+h4 {
+  font-family: 'Hind', sans-serif;
+}
+
+p {
+  font-family: 'Hind', sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+/********** PANORAMA **********/
+
+.panorama-iframe {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 300px;
+  margin-top: 50px;
+}
+/********** NAV **********/
+
+#logo {
+  height: 10px;
+}
+
+.nav-background {
+  background-color: #313131;
+}
+
+.nav-content {
+  height: 70px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 12px 60px;
+}
+
+@media screen and (max-width: 991px){
+
+  #logo {
+    padding: 0;
+  }
+
+  .nav-content {
+    padding: 12px 60px 0 0;
+  }
+}
+
+.nav-content .menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.nav-content .menu li {
+  display: inline;
+  position: relative;
+}
+
+.nav-content .menu li a {
+  font-family: 'Hind', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px;
+  display: inline-block;
+}
+
+.nav-content .menu li a:hover {
+  color: #e49729;
+}
+
+.nav-content .menu li.menu-item-has-children:hover ul {
+  display: block;
+}
+
+.nav-content .menu li ul {
+  position: absolute;
+  min-width: 140px;
+  z-index: 1;
+  right: 0;
+  background-color: rgb(49, 49, 49);
+  padding-left: 0;
+  display: none;
+}
+
+.nav-content .menu li ul li {
+  display: block;
+}
+
+@media screen and (max-width: 976px){
+  .nav-content .menu li ul {
+    position: static;
+    min-width: 0;
+    background-color: transparent;
+    display: block;
+  }
+
+  .nav-content .menu li.menu-item-has-children a {
+    line-height: 0;
+    font-size: 0;
+    padding: 0;
+  }
+
+  .nav-content .menu li ul li {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .nav-content .menu li.menu-item-has-children ul li a {
+    line-height: normal;
+    font-size: medium;
+    padding: 13px;
+  }
+}
+
+.nav-content i {
+  color: white;
+}
+
+/********** DROPDOWN **********/
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    left: -100px;
+    display: none;
+    float: none;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    text-align: center;
+    background-color: #333;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: none;
+}
+
+.dropdown-menu a {
+  width: 100%;
+}
+
+/********** BANNER **********/
+
+img {
+  max-width: 100%;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.header a {
+  color:white;
+}
+
+.header a:hover {
+  color: white;
+}
+
+.header h1 {
+  font-size: 13vw;
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+}
+
+.header a h1 #first {
+  color: white;
+  font-family: 'Italianno', cursive;
+}
+
+.header h2 {
+  font-size: 3vw;
+  position: absolute;
+  bottom: 25%;
+  left: 35%;
+}
+
+.header h2 #second {
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 1200px) {
+  .header h1 {
+    font-size: 180px;
+  }
+
+  .header h2 {
+    font-size: 40px;
+  }
+}
+
+/********** IMG LINKS**********/
+
+.kolme-linkkia {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+@media screen and (max-width: 1000px){
+  .kolme-linkkia {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.img-link {
+  text-align: center;
+}
+
+.img-link h1 {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 0;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+}
+
+.img-link h1:hover {
+  color: #e49729;
+}
+
+.img-link a:hover {
+  text-decoration: none;
+}
+
+.img-link a:active {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 766px){
+  .img-link {
+    padding: 5px;
+  }
+
+  .img-link img{
+    height: 100px;
+    width: 100%;
+
+  }
+}
+
+/********** MAP **********/
+
+.map-img-wrapper {
+  margin-top: 15px;
+  position: relative;
+  height: 500px;
+  background-image: url("./images/viipuri_kartta.jpg");
+}
+
+@media screen and (max-width: 560px){
+  .map-img-wrapper {
+    height: 400px;
+  }
+}
+
+.map-img-overlay {
+  margin-top: 15px;
+  position: relative;
+  height: 500px;
+  z-index: 0;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+@media screen and (max-width: 560px){
+  .map-img-overlay {
+    height: 400px;
+  }
+}
+
+.map-img img {
+  width: 100%;
+}
+
+.map-on-img-txt {
+  z-index: 1;
+  position: absolute;
+  top: 70px;
+  left: 12%;
+}
+
+.map-on-img-txt h1 {
+  font-size: 7vw;
+  font-weight: 400;
+  color: white;
+  line-height: 60%;
+}
+
+@media screen and (min-width: 850px) {
+  .map-on-img-txt h1 {
+    font-size: 60px;
+  }
+}
+
+.map-on-img-txt h3 {
+  font-size: 5vw;
+  font-weight: 100;
+  line-height: 150%;
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .map-on-img-txt h3 {
+    font-size: 30px;
+  }
+}
+
+.map-on-img-txt a {
+  text-decoration: none;
+}
+
+.custom-button {
+  margin-top: 40px;
+  height: 70px;
+  width: 250px;
+  background-color: #e49729;
+}
+
+.custom-button :hover {
+  background-color: #885a18;
+}
+
+.custom-button p {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 230%;
+  color: white;
+}
+
+@media screen and (max-width: 560px){
+  .custom-button {
+    width: 100%;
+  }
+}
+/********** SLIDERS **********/
+
+.slick-track a:hover {
+  text-decoration: none;
+}
+
+.slick-track a:active {
+  text-decoration: none;
+}
+
+.kuva-arkisto{
+  margin: 0 60px 30px 30px; 
+}
+
+.kirjallisuus {
+  margin: 0 40px 80px 40px;
+}
+
+.dark-bg {
+  width: 100%;
+  background-color: #313131;
+}
+
+.topic-dark h3 {
+  color: #fff;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #333333;
+}
+
+.kirjallisuus .slick-prev:before, .kirjallisuus .slick-next:before {
+  color: #fff;
+}
+
+.slider-img {
+  padding: 10px;
+}
+
+.slider-img h3 {
+  color: #fff;
+  font-size: 18px;
+}
+
+/********** CATEGORIES **********/
+
+.kategoria-wrapper a {
+  text-decoration: none;
+  color: #e49729;
+}
+
+.kategoria-wrapper a:hover {
+  color: #333;
+}
+
+.kategoria-wrapper h3 {
+  padding: 0 15px;
+  margin-bottom: 0;
+}
+
+.kategoria-listaus {
+  vertical-align: text-top;
+  text-align: justify;
+  padding: 15px;
+  margin: auto;
+}
+
+.kategoria-listaus h2 {
+  font-weight: 100;
+}
+
+.kategoria-listaus p {
+  color: #333;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 766px){
+  .kategoria-listaus h2{
+    font-size: 22px;
+    padding: 0 15px;
+  }
+  .kategoria-listaus p{
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .kategoria-wrapper h3 {
+    padding: 0 30px;
+  }
+
+  .kategoria-wrapper h4 {
+    padding: 0 15px;
+  }
+}
+
+.single-post-related {
+  vertical-align: text-top;
+  text-align: justify;
+  padding: 20px;
+  display: inline-block;
+  margin: auto;
+}
+
+.single-post-related h4 {
+  color: #e49729;
+  font-weight: 100;
+}
+
+.single-post-related p {
+  color: #333;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.single-post-related h4:hover {
+  color: #333;
+}
+
+.single-article {
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+.single-article h1 {
+  padding: 0 60px;
+}
+
+.single-article p {
+  padding: 0 60px 5px;
+  margin: 0 0 10px;
+}
+
+.single-article a:hover {
+  text-decoration: none;
+}
+
+.single-article a:hover h3 {
+  color: #e49729;
+}
+
+.single-article h3 {
+  padding: 0 60px;
+}
+
+@media screen and (max-width: 766px){
+
+  .single-article h1 {
+    padding: 0 10px;
+  }
+
+  .single-article h3 {
+    padding: 0 10px;
+  }
+
+  .single-article p {
+    padding: 0 10px 5px;
+  }
+}
+.single-article img {
+  padding: 0 30px 0 30px;
+}
+
+.jatka-lukemista {
+  font-weight: bold;
+  color: #e49729;
+  display: block;
+}
+
+/********** KIRJALLISUUS **********/
+
+.kirjallisuus-wrapper {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.kirjallisuus-wrapper h2 {
+  font-size: 16px;
+}
+
+.kirjallisuus-wrapper a {
+  text-decoration: none;
+  color: #e49729;
+}
+
+.kirjallisuus-wrapper a:hover {
+  color: #333;
+}
+
+.kirjallisuus-listaus {
+  padding: 15px;
+  margin: auto;
+}
+
+.kirjan-kansikuva {
+  text-align: center;
+}
+
+.kirjan-kansikuva img {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/********** SIVUN TYYLI ************/
+
+.page-postaus {
+  margin-bottom: 70px;
+  text-align: justify;
+}
+
+.page-postaus h3 {
+  margin: 40px 0 30px 0;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.page-postaus p {
+	color: #333;
+}
+
+.single-article .slider-content-wrapper .image-block_2 {
+  min-width: 500px !important;
+}
+
+@media screen and (max-width: 1000px){
+  .single-article .slider-content-wrapper .image-block_2 {
+    min-width: 0 !important;
+  }
+}
+
+.kuva-arkisto-content {
+  margin: 40px 0;
+}
+
+.yksittainen-kuva {
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px){
+  .yksittainen-kuva {
+    height: auto;
+  }
+}
+
+/********** FOOTER **********/
+
+.footer-container {
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+.footer-background {
+  background-color: #272727;
+}
+
+.footer-content {
+  height: 60px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.footer-content a {
+  color: #fff;
+}
+
+.footer-content a:hover {
+  color: #3e3e3e;
+}
+
+.footer-content .muut-logot {
+  float: left;
+}
+
+.footer-content .some-logot {
+  float: right;
+  text-align: right;
+  font-size: 2em;
+}
